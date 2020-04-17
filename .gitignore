@@ -6,6 +6,7 @@
 *.lo
 *.pc
 .libs/
+targets/
 libtool
 pcre-config
 pcregrep
