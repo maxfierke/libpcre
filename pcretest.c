@@ -3168,7 +3168,7 @@ while (argc > 1 && argv[op][0] == '-')
       ((stack_size = get_value((pcre_uint8 *)argv[op+1], &endptr)),
         *endptr == 0))
     {
-#if defined(_WIN32) || defined(WIN32) || defined(__minix) || defined(NATIVE_ZOS) || defined(__VMS)
+#if defined(_WIN32) || defined(WIN32) || defined(__minix) || defined(NATIVE_ZOS) || defined(__VMS) || defined(__wasi__)
     printf("PCRE: -S not supported on this OS\n");
     exit(1);
 #else
@@ -5770,4 +5770,3 @@ return yield;
 }
 
 /* End of pcretest.c */
-

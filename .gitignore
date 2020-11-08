@@ -1,0 +1,26 @@
+# Build artifacts
+*.a
+*.la
+*.lai
+*.o
+*.lo
+*.pc
+.libs/
+targets/
+libtool
+pcre-config
+pcregrep
+pcretest
+stamp-h1
+
+# Build configuration
+config.h
+config.status
+*.log
+Makefile
+
+# Generated source
+pcre_chartables.c
+pcre.h
+pcre_stringpiece.h
+pcrecpparg.h
