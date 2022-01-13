@@ -7,7 +7,7 @@ export AR="$WASI_SDK_PATH/bin/llvm-ar"
 export RANLIB="$WASI_SDK_PATH/bin/llvm-ranlib"
 export LD="$WASI_SDK_PATH/bin/wasm-ld"
 
-target=$1
+target=${1:-default}
 
 if [ -z "$target" ]; then
   echo "You must specify a target (wasm32-wasi or wasm32-emscripten)"
